@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<title>Home</title>
+
+<frameset rows="20%,*" border="2">
+<frame src="head.html" name="head">
+<frameset cols="20%,*">
+
+<frame src="menu.html" name="menu">
+
+<script>
+session_start();
+    if($_SESSION['userid']!=''||$_SESSION['userid']!=null)
+{
+    <frame src="slam.php" name="body">
+}
+else
+<frame src="process.php" name="body">
+</script>
+
+
+
+</frameset> 
+</frameset>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+</html>
